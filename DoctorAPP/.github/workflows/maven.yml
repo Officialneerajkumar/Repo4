@@ -29,6 +29,5 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Execute Jar file
-      run: sudo kill -9 `sudo Isof -t- 1:8080` & sudo java -jar
+      run: sudo kill -9 `sudo Isof -t- 1:8080` & sudo java -jar /home/ubuntu/actions-runner/_work/Repo4/Repo4/DoctorAPP/src/main/resources &
 
-   
